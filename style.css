@@ -1,0 +1,23 @@
+#calc{
+    text-align: center;
+    color: ghostwhite;
+ 
+    background-color: green;
+    font-size: 15px;
+}
+
+#resultado{
+    color: green;
+}
+
+#btn{
+    background-color: green;
+}
+
+#imagen{
+    width: 50px;
+}
+
+.h2{
+    color: green;
+}

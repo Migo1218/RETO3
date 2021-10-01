@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>RETO3</title>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6">
+                <div id="calc">
+                    <h1>CALCULADORA IMC</h1>
+                </div>
+                <form>
+                    <div class="mb-3">
+                        <div id="emailHelp" class="form-text">Descubre su indice de masa corporal</div><br>
+                        <div><label for="exampleInputEmail1" class="form-label">sexo</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="hombre">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Hombre
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="mujer"
+                                    checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Mujer </label>
+                            </div>
+                        </div>
+                        <div class="d-flex"><label for="edad" class="form-label">Edad</label>
+                            <input type="email" class="form-control" id="edad" aria-describedby="emailHelp">
+                        </div>
+                    </div>
+                    <div class="mb-3 d-flex">
+                        <label for="edad" class="form-label">peso</label>
+                        <input class="form-control" id="peso">
+                        <h2 class="h2">KG</h2>
+                    </div>
+                    <div class="mb-3 d-flex">
+                        <label for="edad" class="form-label">altura</label>
+                        <input class="form-control" id="altura">
+                        <h2 class="h2">M</h2>
+                    </div>
+                    <button type="button" class="btn btn-primary" id="btn" onclick="calcularImc()">Calcular IMC</button>
+                </form>
+            </div>
+            <div class="col-md-6 mt-4 d-flex flex-column align-items-center">
+                <h2 id="titulo">IMC promedio</h2>
+                <h3 id="resultado"></h3>
+                
+                <h3 id="promedio"></h3>
+                <img src="https://www.clinicalascondes.cl/Dev_CLC/media/Imagenes/redi_imc/bmi-bar.png" alt="">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">IMC</th>
+                            <th scope="col">SITUACIÓN</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">18.5 a 24.9</th>
+                            <td>Por debajo del peso</td>
+                
+                        </tr>
+                        <tr>
+                            <th scope="row">25.0 a 29.9</th>
+                            <td>Saludable</td>
+                
+                        </tr>
+                        <tr>
+                            <th scope="row">30.0 a 39.9</th>
+                            <td colspan="2">Con sobrepeso</td>
+                
+                        </tr>
+                        <tr>
+                            <th scope="row">Más de 40</th>
+                            <td colspan="2">Obesidad extrema o de alto riesgo</td>
+                
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script type="text/javascript" src="estadisticas.js"></script>
+    <script src="./script.js"></script>
+    
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
